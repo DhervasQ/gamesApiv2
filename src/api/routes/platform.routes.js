@@ -5,10 +5,10 @@ const {getPlatform, getPlatformById, putPlatform, postPlatform, deletePlatform} 
 const router = express.Router();
 
 router.get('/:id', getPlatformById);
-router.put('/:id', [isAdmin], putPlatform);
-router.delete('/:id', [isAdmin], deletePlatform);
+router.put('/:id',  putPlatform);
+router.delete('/:id',  deletePlatform);
 router.get('/', getPlatform);
-router.post('/', [isAdmin], postPlatform);
+router.post('/',  postPlatform);
 
 module.exports = router;
 

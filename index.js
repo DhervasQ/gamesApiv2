@@ -19,7 +19,7 @@ cloudinary.config({
 });
 
 app.use(cors({
-    origin: ["http://localhost:3000", "http://localhost:4200", "http://localhost:5000", "http://localhost:5500", "https://gamesapi.vercel.app/"],
+    origin: ["http://127.0.0.1:5501","http://127.0.0.1:5500","http://localhost:3000", "http://localhost:4200", "http://localhost:5000", "http://localhost:5500", "https://gamesapi.vercel.app/"],
     credentials: true
 }));
 

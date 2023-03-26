@@ -1,13 +1,12 @@
 const express = require('express');
 const {postLogin, postcheck, postRegister} = require('../controllers/user.controllers');
-const {isAuth,isAdmin} = require('../../middleware/auth')
 
 const router = express.Router();
 
 router.post('/login', postLogin);
 router.post('/register', postRegister);
-router.post('/postcheck',[isAuth], postcheck);
-router.post('/admin', [isAdmin],postLogin);
+router.post('/postcheck', postcheck);
+router.post('/admin',postLogin);
 
 module.exports = router;
 

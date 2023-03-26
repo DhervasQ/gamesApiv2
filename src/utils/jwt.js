@@ -1,14 +1,14 @@
-const jwt = require('jsonWebToken');
+// const jwt = require('jsonWebToken');
 
-const generateSign = (id, email) => {
-    return jwt.sign({id, email}, process.env.JWT_KEY, {expiresIn: '1h'});
-}
+// const generateSign = (id, email) => {
+//     return jwt.sign({id, email}, process.env.JWT_KEY, {expiresIn: '1h'});
+// }
 
-const verifySign = (token) => {
-    return jwt.verify(token, process.env.JWT_KEY);
-}
+// const verifySign = (token) => {
+//     return jwt.verify(token, process.env.JWT_KEY);
+// }
 
 
-module.exports = {verifySign, generateSign};
+// module.exports = {verifySign, generateSign};
 
 
